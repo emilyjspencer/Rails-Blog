@@ -3,4 +3,8 @@ class ArticlesController < ApplicationController # all controllers inherit from 
     @article = Article.new
   end
 
+  def create
+    render plain: params[:article].inspect
+  end
+
 end
