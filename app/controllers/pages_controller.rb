@@ -5,4 +5,6 @@ class PagesController < ApplicationController
 
  def about  # action - localhost:3000/about
  end
+
+ 
 end
