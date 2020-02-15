@@ -15,3 +15,11 @@
  </p>
 <% end %>
 
+<% if @article.errors.any? %>
+ <h2>The following errors prevented the article from saving:</h2>
+ 
+ <% @article.errors.full_messages.each do |msg|%>
+ <%= msg %>
+ <% end %>
+ 
+<% end %>
