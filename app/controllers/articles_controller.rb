@@ -33,6 +33,10 @@ class ArticlesController < ApplicationController # all controllers inherit from 
     end
   end
 
+  def index
+    @articles = Article.all
+  end
+
 
   private
 
